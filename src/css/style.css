@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Slate-300);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  background-color: var(--White);
+  padding: 1.6rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  max-width: 32rem;
+  width: 100%;
+}
+
+.card__img img {
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+.card__title {
+  padding: 0 1.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.card__title-text {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: var(--Slate-900);
+}
+
+.card__subtitle {
+  padding: 0 1.5rem;
+  margin-bottom: 2.4rem;
+}
+
+.card__subtitle-text {
+  font-size: 1.5rem;
+  color: var(--Slate-500);
+  line-height: 1.4;
+}
+
+footer {
+  font-size: 1.1rem;
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--Slate-500);
+  position: absolute;
+  background-color: var(--White);
+  bottom: 0;
+  width: 100%;
+}
